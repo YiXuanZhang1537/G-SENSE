@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/mnt/sda/Archive/Detection_Experiment/detr-main/outputs_cbis1/checkpoint.pth",
+  "epoch": 99,
+  "n_images": 359,
+  "n_gt_boxes": 377,
+  "n_detections": 7910,
+  "device": "cuda",
+  "resize_short_side": 800,
+  "threshold": 0.0,
+  "nms_iou": 0.1,
+  "evaluation_iou": 0.1,
+  "gt": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/cbis_boxes_test.json",
+  "image_dir": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/images2",
+  "froc_definition": "Repository _compute_froc: mean recall at detection-ranked points with FP/image in [0.125,2].",
+  "metrics": {
+    "FROC-AUC (repository definition)": 0.78165203332901,
+    "CPM": 0.7821144461631775,
+    "Sensitivity@0.125FP/image": 0.5278514623641968,
+    "Sensitivity@0.25FP/image": 0.6233421564102173,
+    "Sensitivity@0.5FP/image": 0.7453581094741821,
+    "Sensitivity@1.0FP/image": 0.8196286559104919,
+    "Sensitivity@2.0FP/image": 0.8726790547370911,
+    "Sensitivity@4.0FP/image": 0.9257294535636902,
+    "Sensitivity@8.0FP/image": 0.960212230682373
+  }
+}

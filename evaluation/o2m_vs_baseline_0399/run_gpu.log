@@ -1,0 +1,108 @@
+Device: cuda; CUDA available: True
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+baseline+o2m: 1/359, elapsed 0.9s
+baseline+o2m: 10/359, elapsed 2.1s
+baseline+o2m: 20/359, elapsed 3.8s
+baseline+o2m: 30/359, elapsed 5.6s
+baseline+o2m: 40/359, elapsed 7.0s
+baseline+o2m: 50/359, elapsed 8.9s
+baseline+o2m: 60/359, elapsed 10.3s
+baseline+o2m: 70/359, elapsed 11.7s
+baseline+o2m: 80/359, elapsed 13.2s
+baseline+o2m: 90/359, elapsed 14.7s
+baseline+o2m: 100/359, elapsed 16.1s
+baseline+o2m: 110/359, elapsed 17.6s
+baseline+o2m: 120/359, elapsed 19.4s
+baseline+o2m: 130/359, elapsed 21.1s
+baseline+o2m: 140/359, elapsed 22.6s
+baseline+o2m: 150/359, elapsed 24.3s
+baseline+o2m: 160/359, elapsed 25.7s
+baseline+o2m: 170/359, elapsed 27.3s
+baseline+o2m: 180/359, elapsed 28.7s
+baseline+o2m: 190/359, elapsed 30.0s
+baseline+o2m: 200/359, elapsed 31.8s
+baseline+o2m: 210/359, elapsed 33.3s
+baseline+o2m: 220/359, elapsed 35.1s
+baseline+o2m: 230/359, elapsed 36.6s
+baseline+o2m: 240/359, elapsed 38.5s
+baseline+o2m: 250/359, elapsed 39.8s
+baseline+o2m: 260/359, elapsed 41.3s
+baseline+o2m: 270/359, elapsed 43.1s
+baseline+o2m: 280/359, elapsed 44.8s
+baseline+o2m: 290/359, elapsed 46.2s
+baseline+o2m: 300/359, elapsed 47.9s
+baseline+o2m: 310/359, elapsed 49.5s
+baseline+o2m: 320/359, elapsed 50.9s
+baseline+o2m: 330/359, elapsed 52.6s
+baseline+o2m: 340/359, elapsed 54.1s
+baseline+o2m: 350/359, elapsed 55.9s
+baseline+o2m: 359/359, elapsed 57.0s
+baseline: 1/359, elapsed 0.1s
+baseline: 10/359, elapsed 1.2s
+baseline: 20/359, elapsed 2.7s
+baseline: 30/359, elapsed 4.1s
+baseline: 40/359, elapsed 5.4s
+baseline: 50/359, elapsed 7.0s
+baseline: 60/359, elapsed 8.3s
+baseline: 70/359, elapsed 9.3s
+baseline: 80/359, elapsed 10.6s
+baseline: 90/359, elapsed 11.9s
+baseline: 100/359, elapsed 13.1s
+baseline: 110/359, elapsed 14.5s
+baseline: 120/359, elapsed 16.2s
+baseline: 130/359, elapsed 17.7s
+baseline: 140/359, elapsed 19.0s
+baseline: 150/359, elapsed 20.5s
+baseline: 160/359, elapsed 21.8s
+baseline: 170/359, elapsed 23.2s
+baseline: 180/359, elapsed 24.4s
+baseline: 190/359, elapsed 25.5s
+baseline: 200/359, elapsed 27.0s
+baseline: 210/359, elapsed 28.3s
+baseline: 220/359, elapsed 29.9s
+baseline: 230/359, elapsed 31.2s
+baseline: 240/359, elapsed 32.8s
+baseline: 250/359, elapsed 33.9s
+baseline: 260/359, elapsed 35.2s
+baseline: 270/359, elapsed 36.7s
+baseline: 280/359, elapsed 38.1s
+baseline: 290/359, elapsed 39.4s
+baseline: 300/359, elapsed 40.8s
+baseline: 310/359, elapsed 42.2s
+baseline: 320/359, elapsed 43.5s
+baseline: 330/359, elapsed 44.9s
+baseline: 340/359, elapsed 46.2s
+baseline: 350/359, elapsed 47.8s
+baseline: 359/359, elapsed 48.7s
+Patient bootstrap 1000/5000
+Patient bootstrap 2000/5000
+Patient bootstrap 3000/5000
+Patient bootstrap 4000/5000
+Patient bootstrap 5000/5000
+Patient permutation 1000/10000
+Patient permutation 2000/10000
+Patient permutation 3000/10000
+Patient permutation 4000/10000
+Patient permutation 5000/10000
+Patient permutation 6000/10000
+Patient permutation 7000/10000
+Patient permutation 8000/10000
+Patient permutation 9000/10000
+Patient permutation 10000/10000
+Comparison: baseline+o2m/checkpoint0399 vs baseline/checkpoint0399
+359 images, 200 patients; patient-level paired permutation (two-sided), 10000 permutations.
+Patient bootstrap 95% CI, 5000 resamples; IoU=0.1, NMS=0.1, Resize=800, score threshold=0.
+FROC-AUC follows repository definition (mean sensitivity at detection-ranked points in FP/image range [0.125,2]).
+Metric | o2m | baseline | difference | 95% CI of difference | p (two-sided, unadjusted)
+FROC-AUC (repository definition) | 0.831052 | 0.810921 | +0.020131 | [-0.009996734559535978, 0.04934697151184081] | 0.19718
+CPM | 0.820008 | 0.809776 | +0.010231 | [-0.018712360944066652, 0.03664947407586234] | 0.481752
+Sensitivity@0.125FP/image | 0.649867 | 0.591512 | +0.058355 | [-0.03673098385334014, 0.1344097226858139] | 0.160884
+Sensitivity@0.25FP/image | 0.726790 | 0.694960 | +0.031830 | [-0.01928510218858719, 0.08380418419837944] | 0.240676
+Sensitivity@0.5FP/image | 0.803714 | 0.777188 | +0.026525 | [-0.020290206372737884, 0.069333316385746] | 0.265173
+Sensitivity@1.0FP/image | 0.864721 | 0.848806 | +0.015915 | [-0.016129016876220703, 0.050135660171508736] | 0.40436
+Sensitivity@2.0FP/image | 0.885942 | 0.885942 | +0.000000 | [-0.029571858048439027, 0.034231589734554264] | 1
+Sensitivity@4.0FP/image | 0.904509 | 0.928382 | -0.023873 | [-0.05494577139616012, 0.0025192111730575513] | 0.134987
+Sensitivity@8.0FP/image | 0.904509 | 0.941645 | -0.037135 | [-0.0659347876906395, -0.008379876613616943] | 0.0183982

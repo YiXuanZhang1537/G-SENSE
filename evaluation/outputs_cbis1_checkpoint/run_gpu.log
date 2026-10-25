@@ -1,0 +1,67 @@
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+checkpoint: 1/359, elapsed 0.4s
+checkpoint: 10/359, elapsed 1.5s
+checkpoint: 20/359, elapsed 2.9s
+checkpoint: 30/359, elapsed 4.4s
+checkpoint: 40/359, elapsed 5.6s
+checkpoint: 50/359, elapsed 7.2s
+checkpoint: 60/359, elapsed 8.6s
+checkpoint: 70/359, elapsed 9.6s
+checkpoint: 80/359, elapsed 10.9s
+checkpoint: 90/359, elapsed 12.2s
+checkpoint: 100/359, elapsed 13.5s
+checkpoint: 110/359, elapsed 14.9s
+checkpoint: 120/359, elapsed 16.6s
+checkpoint: 130/359, elapsed 18.1s
+checkpoint: 140/359, elapsed 19.5s
+checkpoint: 150/359, elapsed 21.0s
+checkpoint: 160/359, elapsed 22.3s
+checkpoint: 170/359, elapsed 23.7s
+checkpoint: 180/359, elapsed 25.0s
+checkpoint: 190/359, elapsed 26.1s
+checkpoint: 200/359, elapsed 27.7s
+checkpoint: 210/359, elapsed 29.1s
+checkpoint: 220/359, elapsed 30.9s
+checkpoint: 230/359, elapsed 32.2s
+checkpoint: 240/359, elapsed 33.9s
+checkpoint: 250/359, elapsed 35.0s
+checkpoint: 260/359, elapsed 36.4s
+checkpoint: 270/359, elapsed 37.9s
+checkpoint: 280/359, elapsed 39.3s
+checkpoint: 290/359, elapsed 40.6s
+checkpoint: 300/359, elapsed 41.9s
+checkpoint: 310/359, elapsed 43.3s
+checkpoint: 320/359, elapsed 44.5s
+checkpoint: 330/359, elapsed 45.9s
+checkpoint: 340/359, elapsed 47.2s
+checkpoint: 350/359, elapsed 48.7s
+checkpoint: 359/359, elapsed 49.7s
+{
+  "checkpoint": "/mnt/sda/Archive/Detection_Experiment/detr-main/outputs_cbis1/checkpoint.pth",
+  "epoch": 99,
+  "n_images": 359,
+  "n_gt_boxes": 377,
+  "n_detections": 7910,
+  "device": "cuda",
+  "resize_short_side": 800,
+  "threshold": 0.0,
+  "nms_iou": 0.1,
+  "evaluation_iou": 0.1,
+  "gt": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/cbis_boxes_test.json",
+  "image_dir": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/images2",
+  "froc_definition": "Repository _compute_froc: mean recall at detection-ranked points with FP/image in [0.125,2].",
+  "metrics": {
+    "FROC-AUC (repository definition)": 0.78165203332901,
+    "CPM": 0.7821144461631775,
+    "Sensitivity@0.125FP/image": 0.5278514623641968,
+    "Sensitivity@0.25FP/image": 0.6233421564102173,
+    "Sensitivity@0.5FP/image": 0.7453581094741821,
+    "Sensitivity@1.0FP/image": 0.8196286559104919,
+    "Sensitivity@2.0FP/image": 0.8726790547370911,
+    "Sensitivity@4.0FP/image": 0.9257294535636902,
+    "Sensitivity@8.0FP/image": 0.960212230682373
+  }
+}

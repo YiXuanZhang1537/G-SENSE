@@ -1,0 +1,131 @@
+{
+  "n_images": 359,
+  "n_patients": 200,
+  "n_gt_boxes": 377,
+  "evaluation_iou": 0.1,
+  "nms_iou": 0.1,
+  "threshold": 0.0,
+  "resize_short_side": 800,
+  "resampling_unit": "patient",
+  "n_permutations": 10000,
+  "n_bootstrap": 5000,
+  "bootstrap_seed": 42,
+  "permutation_seed": 43,
+  "comparison": "baseline+o2m minus baseline",
+  "primary_metric": "FROC-AUC (repository definition)",
+  "secondary_pvalues_adjusted": false,
+  "froc_definition": "Repository _compute_froc: mean recall at detection-ranked points with FP/image in [0.125,2]; not a trapezoidal area.",
+  "checkpoints": [
+    "/mnt/sda/Archive/Big-Data/baseline+o2m/detr-cbis/checkpoint0399.pth",
+    "/mnt/sda/Archive/Detection_Experiment/detr-main/output_cbis/checkpoint.pth"
+  ],
+  "checkpoint_epochs": [
+    399,
+    299
+  ],
+  "gt": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/cbis_boxes_test.json",
+  "image_dir": "/mnt/sda/Medical_Dataset/Public/CBIS-DDSM/cbis_test/images2",
+  "torch_version": "2.14.0+cu130",
+  "device": "cuda",
+  "metrics": [
+    {
+      "metric": "FROC-AUC (repository definition)",
+      "o2m": 0.8310521841049194,
+      "baseline": 0.8164213299751282,
+      "difference": 0.01463085412979126,
+      "difference_ci95": [
+        -0.01593223363161087,
+        0.04428277909755705
+      ],
+      "p_two_sided": 0.3444655534446555
+    },
+    {
+      "metric": "CPM",
+      "o2m": 0.8200075711522784,
+      "baseline": 0.8177339945520673,
+      "difference": 0.0022735766002111024,
+      "difference_ci95": [
+        -0.025762900071484747,
+        0.028489021744046907
+      ],
+      "p_two_sided": 0.8805119488051195
+    },
+    {
+      "metric": "Sensitivity@0.125FP/image",
+      "o2m": 0.6498673558235168,
+      "baseline": 0.6419098377227783,
+      "difference": 0.007957518100738525,
+      "difference_ci95": [
+        -0.08424396514892578,
+        0.07142853885889053
+      ],
+      "p_two_sided": 0.8692130786921308
+    },
+    {
+      "metric": "Sensitivity@0.25FP/image",
+      "o2m": 0.7267904281616211,
+      "baseline": 0.721485435962677,
+      "difference": 0.005304992198944092,
+      "difference_ci95": [
+        -0.04545450210571289,
+        0.050938309729099275
+      ],
+      "p_two_sided": 0.8661133886611339
+    },
+    {
+      "metric": "Sensitivity@0.5FP/image",
+      "o2m": 0.8037135004997253,
+      "baseline": 0.7718833088874817,
+      "difference": 0.03183019161224365,
+      "difference_ci95": [
+        -0.015958480536937714,
+        0.0757179856300354
+      ],
+      "p_two_sided": 0.2733726627337266
+    },
+    {
+      "metric": "Sensitivity@1.0FP/image",
+      "o2m": 0.8647214770317078,
+      "baseline": 0.8408488035202026,
+      "difference": 0.023872673511505127,
+      "difference_ci95": [
+        -0.010931245982646942,
+        0.06451612710952759
+      ],
+      "p_two_sided": 0.16768323167683233
+    },
+    {
+      "metric": "Sensitivity@2.0FP/image",
+      "o2m": 0.8859416246414185,
+      "baseline": 0.883289098739624,
+      "difference": 0.0026525259017944336,
+      "difference_ci95": [
+        -0.02964961528778076,
+        0.03763809800148005
+      ],
+      "p_two_sided": 0.9325067493250675
+    },
+    {
+      "metric": "Sensitivity@4.0FP/image",
+      "o2m": 0.9045093059539795,
+      "baseline": 0.9204244017601013,
+      "difference": -0.015915095806121826,
+      "difference_ci95": [
+        -0.041322290897369385,
+        0.010695935785770406
+      ],
+      "p_two_sided": 0.23177682231776822
+    },
+    {
+      "metric": "Sensitivity@8.0FP/image",
+      "o2m": 0.9045093059539795,
+      "baseline": 0.9442970752716064,
+      "difference": -0.03978776931762695,
+      "difference_ci95": [
+        -0.06631302833557129,
+        -0.015113353729248047
+      ],
+      "p_two_sided": 0.0051994800519948
+    }
+  ]
+}

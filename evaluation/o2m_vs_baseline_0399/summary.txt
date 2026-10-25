@@ -1,0 +1,14 @@
+Comparison: baseline+o2m/checkpoint0399 vs baseline/checkpoint0399
+359 images, 200 patients; patient-level paired permutation (two-sided), 10000 permutations.
+Patient bootstrap 95% CI, 5000 resamples; IoU=0.1, NMS=0.1, Resize=800, score threshold=0.
+FROC-AUC follows repository definition (mean sensitivity at detection-ranked points in FP/image range [0.125,2]).
+Metric | o2m | baseline | difference | 95% CI of difference | p (two-sided, unadjusted)
+FROC-AUC (repository definition) | 0.831052 | 0.810921 | +0.020131 | [-0.009996734559535978, 0.04934697151184081] | 0.19718
+CPM | 0.820008 | 0.809776 | +0.010231 | [-0.018712360944066652, 0.03664947407586234] | 0.481752
+Sensitivity@0.125FP/image | 0.649867 | 0.591512 | +0.058355 | [-0.03673098385334014, 0.1344097226858139] | 0.160884
+Sensitivity@0.25FP/image | 0.726790 | 0.694960 | +0.031830 | [-0.01928510218858719, 0.08380418419837944] | 0.240676
+Sensitivity@0.5FP/image | 0.803714 | 0.777188 | +0.026525 | [-0.020290206372737884, 0.069333316385746] | 0.265173
+Sensitivity@1.0FP/image | 0.864721 | 0.848806 | +0.015915 | [-0.016129016876220703, 0.050135660171508736] | 0.40436
+Sensitivity@2.0FP/image | 0.885942 | 0.885942 | +0.000000 | [-0.029571858048439027, 0.034231589734554264] | 1
+Sensitivity@4.0FP/image | 0.904509 | 0.928382 | -0.023873 | [-0.05494577139616012, 0.0025192111730575513] | 0.134987
+Sensitivity@8.0FP/image | 0.904509 | 0.941645 | -0.037135 | [-0.0659347876906395, -0.008379876613616943] | 0.0183982

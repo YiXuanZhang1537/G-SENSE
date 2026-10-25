@@ -1,0 +1,72 @@
+Device: cuda; CUDA available: True
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+baseline: 1/359, elapsed 0.4s
+baseline: 10/359, elapsed 1.4s
+baseline: 20/359, elapsed 2.8s
+baseline: 30/359, elapsed 4.2s
+baseline: 40/359, elapsed 5.5s
+baseline: 50/359, elapsed 7.1s
+baseline: 60/359, elapsed 8.4s
+baseline: 70/359, elapsed 9.4s
+baseline: 80/359, elapsed 10.7s
+baseline: 90/359, elapsed 12.0s
+baseline: 100/359, elapsed 13.2s
+baseline: 110/359, elapsed 14.6s
+baseline: 120/359, elapsed 16.2s
+baseline: 130/359, elapsed 17.7s
+baseline: 140/359, elapsed 19.0s
+baseline: 150/359, elapsed 20.5s
+baseline: 160/359, elapsed 21.8s
+baseline: 170/359, elapsed 23.2s
+baseline: 180/359, elapsed 24.4s
+baseline: 190/359, elapsed 25.5s
+baseline: 200/359, elapsed 27.0s
+baseline: 210/359, elapsed 28.4s
+baseline: 220/359, elapsed 30.1s
+baseline: 230/359, elapsed 31.4s
+baseline: 240/359, elapsed 33.1s
+baseline: 250/359, elapsed 34.2s
+baseline: 260/359, elapsed 35.5s
+baseline: 270/359, elapsed 37.0s
+baseline: 280/359, elapsed 38.4s
+baseline: 290/359, elapsed 39.6s
+baseline: 300/359, elapsed 41.0s
+baseline: 310/359, elapsed 42.4s
+baseline: 320/359, elapsed 43.6s
+baseline: 330/359, elapsed 44.9s
+baseline: 340/359, elapsed 46.2s
+baseline: 350/359, elapsed 47.8s
+baseline: 359/359, elapsed 48.7s
+Patient bootstrap 1000/5000
+Patient bootstrap 2000/5000
+Patient bootstrap 3000/5000
+Patient bootstrap 4000/5000
+Patient bootstrap 5000/5000
+Patient permutation 1000/10000
+Patient permutation 2000/10000
+Patient permutation 3000/10000
+Patient permutation 4000/10000
+Patient permutation 5000/10000
+Patient permutation 6000/10000
+Patient permutation 7000/10000
+Patient permutation 8000/10000
+Patient permutation 9000/10000
+Patient permutation 10000/10000
+Comparison: /mnt/sda/Archive/Big-Data/baseline+o2m/detr-cbis/checkpoint0399.pth vs /mnt/sda/Archive/Detection_Experiment/detr-main/output_cbis/checkpoint.pth
+Stored epochs: [399, 299]
+359 images, 200 patients; patient-level paired permutation (two-sided), 10000 permutations.
+Patient bootstrap 95% CI, 5000 resamples; IoU=0.1, NMS=0.1, Resize=800, score threshold=0.
+FROC-AUC follows repository definition (mean sensitivity at detection-ranked points in FP/image range [0.125,2]).
+Metric | o2m | baseline | difference | 95% CI of difference | p (two-sided, unadjusted)
+FROC-AUC (repository definition) | 0.831052 | 0.816421 | +0.014631 | [-0.01593223363161087, 0.04428277909755705] | 0.344466
+CPM | 0.820008 | 0.817734 | +0.002274 | [-0.025762900071484747, 0.028489021744046907] | 0.880512
+Sensitivity@0.125FP/image | 0.649867 | 0.641910 | +0.007958 | [-0.08424396514892578, 0.07142853885889053] | 0.869213
+Sensitivity@0.25FP/image | 0.726790 | 0.721485 | +0.005305 | [-0.04545450210571289, 0.050938309729099275] | 0.866113
+Sensitivity@0.5FP/image | 0.803714 | 0.771883 | +0.031830 | [-0.015958480536937714, 0.0757179856300354] | 0.273373
+Sensitivity@1.0FP/image | 0.864721 | 0.840849 | +0.023873 | [-0.010931245982646942, 0.06451612710952759] | 0.167683
+Sensitivity@2.0FP/image | 0.885942 | 0.883289 | +0.002653 | [-0.02964961528778076, 0.03763809800148005] | 0.932507
+Sensitivity@4.0FP/image | 0.904509 | 0.920424 | -0.015915 | [-0.041322290897369385, 0.010695935785770406] | 0.231777
+Sensitivity@8.0FP/image | 0.904509 | 0.944297 | -0.039788 | [-0.06631302833557129, -0.015113353729248047] | 0.00519948

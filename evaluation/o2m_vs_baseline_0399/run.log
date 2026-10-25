@@ -1,0 +1,12 @@
+/home/gem/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-x5gq1x_q because there was an issue with the default path (/home/gem/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/gem/miniconda3/lib/python3.14/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+baseline+o2m: 1/359, elapsed 1.5s
+baseline+o2m: 10/359, elapsed 12.1s
+baseline+o2m: 20/359, elapsed 23.0s
+baseline+o2m: 30/359, elapsed 34.6s
+baseline+o2m: 40/359, elapsed 45.0s
+baseline+o2m: 50/359, elapsed 55.3s

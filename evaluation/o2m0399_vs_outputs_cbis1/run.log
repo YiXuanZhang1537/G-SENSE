@@ -1,0 +1,31 @@
+Device: cuda; CUDA available: False
+Patient bootstrap 1000/5000
+Patient bootstrap 2000/5000
+Patient bootstrap 3000/5000
+Patient bootstrap 4000/5000
+Patient bootstrap 5000/5000
+Patient permutation 1000/10000
+Patient permutation 2000/10000
+Patient permutation 3000/10000
+Patient permutation 4000/10000
+Patient permutation 5000/10000
+Patient permutation 6000/10000
+Patient permutation 7000/10000
+Patient permutation 8000/10000
+Patient permutation 9000/10000
+Patient permutation 10000/10000
+Comparison: /mnt/sda/Archive/Big-Data/baseline+o2m/detr-cbis/checkpoint0399.pth vs /mnt/sda/Archive/Detection_Experiment/detr-main/outputs_cbis1/checkpoint.pth
+Stored epochs: [399, 99]
+359 images, 200 patients; patient-level paired permutation (two-sided), 10000 permutations.
+Patient bootstrap 95% CI, 5000 resamples; IoU=0.1, NMS=0.1, Resize=800, score threshold=0.
+FROC-AUC follows repository definition (mean sensitivity at detection-ranked points in FP/image range [0.125,2]).
+Metric | o2m | baseline | difference | 95% CI of difference | p (two-sided, unadjusted)
+FROC-AUC (repository definition) | 0.831052 | 0.781652 | +0.049400 | [0.013141623139381409, 0.08671067506074903] | 0.00719928
+CPM | 0.820008 | 0.782114 | +0.037893 | [0.003521073928901145, 0.0714285671710968] | 0.0286971
+Sensitivity@0.125FP/image | 0.649867 | 0.527851 | +0.122016 | [0.036342547833919533, 0.19946807622909546] | 0.00869913
+Sensitivity@0.25FP/image | 0.726790 | 0.623342 | +0.103448 | [0.03936895430088043, 0.1593492507934569] | 0.00189981
+Sensitivity@0.5FP/image | 0.803714 | 0.745358 | +0.058355 | [-6.329119205472695e-05, 0.10752689838409424] | 0.0285971
+Sensitivity@1.0FP/image | 0.864721 | 0.819629 | +0.045093 | [0.0, 0.08707142621278763] | 0.0258974
+Sensitivity@2.0FP/image | 0.885942 | 0.872679 | +0.013263 | [-0.019283771514892578, 0.05479544401168822] | 0.548845
+Sensitivity@4.0FP/image | 0.904509 | 0.925729 | -0.021220 | [-0.05526662468910217, 0.016089062392711594] | 0.283672
+Sensitivity@8.0FP/image | 0.904509 | 0.960212 | -0.055703 | [-0.08684497922658921, -0.026159715652465866] | 0.00019998

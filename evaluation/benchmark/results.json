@@ -1,0 +1,55 @@
+{
+  "checkpoint": "/mnt/sda/Archive/Big-Data/Triple-match-v1.0/detr-cbis-5/checkpoint0159.pth",
+  "epoch": 159,
+  "device": "cpu",
+  "hardware": "Intel(R) Core(TM) i9-14900K",
+  "torch_version": "2.14.0+cu130",
+  "threads": 4,
+  "precision": "float32",
+  "batch_size": 1,
+  "warmup": 10,
+  "iterations": 30,
+  "parameters": 45697223,
+  "scope": "Model forward only; synthetic input; excludes preprocessing, transfer and postprocessing.",
+  "flop_convention": "multiply-add = 2 FLOPs; PyTorch FlopCounterMode registered operators (primarily convolution and matrix multiplication); elementwise operations excluded.",
+  "measurements": [
+    {
+      "input_shape": [
+        1,
+        3,
+        800,
+        800
+      ],
+      "gflops": 120.4675072,
+      "fps": 2.072118268952791,
+      "mean_latency_ms": 482.5979361232991,
+      "median_latency_ms": 482.12946159765124,
+      "latency_std_ms": 4.229685466044925,
+      "counted_operations": {
+        "aten.convolution": 104919040000,
+        "aten.bmm": 1699200000,
+        "aten.baddbmm": 1392000000,
+        "aten.addmm": 12457267200
+      }
+    },
+    {
+      "input_shape": [
+        1,
+        3,
+        800,
+        1333
+      ],
+      "gflops": 203.3040896,
+      "fps": 0.9834201122437559,
+      "mean_latency_ms": 1016.8594149639829,
+      "median_latency_ms": 1019.8516629170626,
+      "latency_std_ms": 12.081059346000583,
+      "counted_operations": {
+        "aten.convolution": 175767603200,
+        "aten.bmm": 4183756800,
+        "aten.baddbmm": 3709440000,
+        "aten.addmm": 19643289600
+      }
+    }
+  ]
+}
